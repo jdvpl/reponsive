@@ -1,0 +1,475 @@
+@import './variables.css';
+@font-face {
+    font-family:Dancing Script;
+    src: url(../fuentes/dancing.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family: Dancing script;
+    background-color: black;
+}
+
+@media all and (min-width:1201px) {
+    .encabezado {
+        font-family: var(--fuentes);
+        background-color: var( --color-fon-header);
+        padding: 1%;
+        border-radius: 10px 10px 0 0 ;
+        animation: slidein 1.5s;
+    }
+    
+
+    @keyframes slidein {
+        0% {
+            margin-top: 150%;
+            }
+            60% {
+            margin-top: -5%;
+            }
+            100% {
+            margin-top: 0;
+            }
+            }
+
+    .titulo {
+        text-transform: capitalize;
+        color: white;
+        font-size: 2em;
+        text-shadow: 2px 2px #02010a;
+    }
+    nav{
+        float: right;
+        margin-right: 3vw;
+    }
+    .menu{
+        list-style-type: none;
+        margin-top: -5vh;
+    }
+    
+    .menu>li {
+        display: inline-block;
+         margin-right: 1vw;
+         letter-spacing: -0.1em;
+    }
+    .activo{
+        border-bottom: 2px solid currentColor;
+    }
+    
+    li>a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-size: 1.8em;
+    }
+    .menu>li>a:hover {
+        color: wheat;
+        font-weight: bold;
+        font-size: 1.8em;
+    }
+
+    .divimagen {
+        background-color: #82c3a6;
+        padding: 2% 3% 2% 3%;
+
+    }
+    .velero{
+        width: 95%;
+        text-align: center;
+        box-shadow: 2px 2px 5px black;
+    }
+    .veler{
+        text-align: center;
+       
+    }
+
+    .contenido {
+        background-color:  #d5c75f;
+        display: flex;
+        padding: 2%;
+        border: 1px;
+    }
+    .pai, .re{
+        width: 80%;
+        box-shadow: 3px 3px black;
+    }
+    .paisaje, .retrato{
+        text-align: center;
+    }
+
+    .pai:hover{
+        box-shadow: 2x 2px #82c3a6;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+
+    .retrato:hover{
+        box-shadow: 2x 2px #82c3a6;
+        animation-name:imagen2-animacion;
+        animation-duration: 2s;
+    }
+
+    @keyframes imagen2-animacion {
+        0% {
+            position: relative;
+            left: 0px;
+            bottom: 0px;
+        }
+        50% {
+            position: relative;
+            left: 20px;
+            bottom: 5px;
+        }
+        100% {
+            position: relative;
+            left: 0px;
+            bottom: 0px;
+        }
+    }
+
+    figcaption a{
+        text-decoration: none;
+         margin-right: 1vw;
+         font-size: 1.5em;
+         color: black;
+         border-bottom: 2px solid currentColor;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        padding: 2%;
+        font-size: 1.2em;
+        background-color:  #C6d5c5;
+        border-radius: 0px 0px 10px 10px;
+    }
+    .primer{
+        flex-direction: row;
+        display: flex;
+        width: 100%;
+        margin-left: 1%;
+    }
+    .segun{
+        flex-direction: row;
+        display: flex;
+        width: 100%;
+        margin-left: 1%;
+    }
+   
+    .contacto, .terminos, .redes, .derechos{
+        width: 100%;
+        font-weight: bold;
+        padding: 1%;
+        text-align: center;
+    }
+    footer div a{
+        text-decoration: underline;
+         margin-right: 1vw;
+         color: black;
+    }
+    
+}
+
+@media all and (min-width:641px) and (max-width: 1200px) {
+    .encabezado {
+        font-family: var(--fuentes);
+        background-color: var( --color-fon-header);
+        display: flex;
+        font-size: 1em;
+        padding: 1%;
+        border-radius: 10px 10px 0 0 ;
+        animation: slidein 1.5s;
+    }
+    
+
+    @keyframes slidein {
+        0% {
+            margin-top: 150%;
+            }
+            60% {
+            margin-top: -5%;
+            }
+            100% {
+            margin-top: 0;
+            }
+            }
+    .titulo {
+        text-transform: capitalize;
+        color: white;
+        text-shadow: 2px 2px #02010a;
+    }
+    nav{
+        text-align: right;
+    }
+    .menu {
+    
+        margin-top: 2vh;
+    }
+    .menu>li {
+        display: inline;
+        margin-left: 1vw;
+    }
+    .menu>li>a {
+        text-decoration: none;
+        color: white;
+        font-size: 1em;
+    }
+    .activo{
+        border-bottom: 2px solid currentColor;
+    }
+    .menu>li>a:hover {
+        color: wheat;
+        font-weight: bold;
+        font-size: 1em;
+    }
+    .divimagen {
+        background-color: #82c3a6;
+        padding: 2% 3% 2% 3%;
+    }
+    .velero{
+        width: 95%;
+        text-align: center;
+        box-shadow: 2px 2px 5px black;
+    }
+    .veler{
+        text-align: center;
+    }
+
+    .contenido {
+        background-color:  #d5c75f;
+        display: flex;
+        padding: 2%;
+        border: 1px;
+    }
+    .pai, .re{
+        width: 80%;
+        box-shadow: 3px 3px black;
+    }
+    .paisaje, .retrato{
+        text-align: center;
+    }
+
+    .pai:hover{
+        box-shadow: 2x 2px #82c3a6;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+
+    .retrato:hover{
+        box-shadow: 2x 2px #82c3a6;
+        animation-name:imagen2-animacion;
+        animation-duration: 2s;
+    }
+
+    @keyframes imagen2-animacion {
+        0% {
+            position: relative;
+            left: 0px;
+            bottom: 0px;
+        }
+        50% {
+            position: relative;
+            left: 20px;
+            bottom: 5px;
+        }
+        100% {
+            position: relative;
+            left: 0px;
+            bottom: 0px;
+        }
+    }
+
+    figcaption a{
+        text-decoration: none;
+         margin-right: 1vw;
+         font-size: 1.5em;
+         color: black;
+         border-bottom: 2px solid currentColor;
+    }
+    footer {
+        padding: 2%;
+        display: flex;
+        flex-direction:row;
+        background-color:  #C6d5c5;
+        border-radius: 0px 0px 10px 10px;
+    }
+    .primer{
+        width: 100%;
+    }
+    .segun{
+        width: 100%;
+    }
+    .contacto{
+        text-align: center;
+        width: 100%;
+        font-weight: normal;
+        font-weight: bold;
+    }
+    .terminos{
+        text-align: center;
+        margin-top: 5%;
+        width: 100%;
+    }
+    .redes{
+        text-align: center;
+        width: 100%;
+    }
+    .derechos{
+        text-align: center;
+        margin-top: 5%;
+        width: 100%;
+    }
+    footer div a{
+        text-decoration: underline;
+         margin-right: 1vw;
+         color: black;
+         padding: 1.2vw 1.2vh;
+    }
+    
+}
+
+@media all and (max-width: 640px) {
+    .encabezado {
+        font-family: var(--fuentes);
+        background-color: var( --color-fon-header);
+        display: block;
+        font-size: 1rem;
+        padding: 1vh;
+        border-radius: 10px 10px 0 0 ;
+        animation: slidein 1.5s;
+    }
+    
+
+    @keyframes slidein {
+        0% {
+            margin-top: 150%;
+            }
+            60% {
+            margin-top: -5%;
+            }
+            100% {
+            margin-top: 0;
+            }
+            }
+    .titulo {
+        text-transform: capitalize;
+        color: white;
+        margin: auto;
+        width: 50%;
+        text-align: center;
+    }
+    .menu {
+        text-align: center;
+        padding: 1%;
+    }
+    .menu>li {
+        display: inline;
+        margin-left: 1.5vw;
+    }
+    .menu>li>a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5em;
+    }
+    .activo{
+        border-bottom: 2px solid currentColor;
+    }
+    .divimagen {
+        background-color: #82c3a6;
+        padding: 2% 3% 2% 3%;
+    }
+    .velero{
+        width: 95%;
+        text-align: center;
+        box-shadow: 2px 2px 5px black;
+    }
+    .veler{
+        text-align: center;
+    }
+
+    .contenido {
+        background-color:  #d5c75f;
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        border: 1px;
+    }
+    .pai, .re{
+        margin: 2%;
+        width: 80%;
+        box-shadow: 3px 3px black;
+    }
+    .paisaje, .retrato{
+        text-align: center;
+    }
+
+    .pai:hover{
+        box-shadow: 2x 2px #82c3a6;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+
+    .retrato:hover{
+        box-shadow: 2x 2px #82c3a6;
+        animation-name:imagen2-animacion;
+        animation-duration: 2s;
+    }
+
+    @keyframes imagen2-animacion {
+        0% {
+            position: relative;
+            left: 0px;
+            bottom: 0px;
+        }
+        50% {
+            position: relative;
+            left: 20px;
+            bottom: 5px;
+        }
+        100% {
+            position: relative;
+            left: 0px;
+            bottom: 0px;
+        }
+    }
+
+    figcaption a{
+        text-decoration: none;
+         margin-right: 1vw;
+         font-size: 1.5em;
+         color: black;
+         border-bottom: 2px solid currentColor;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+        background-color:  #C6d5c5;
+        font-size: 0.85em;
+        border-radius: 0px 0px 10px 10px;
+    }
+    .contacto, .terminos, .redes, .derechos{
+        margin: auto;
+        text-align: left;
+        margin: 5%;
+        font-size: 1.3em;
+        font-weight: normal;
+        font-weight: bold;
+    }
+    footer div a{
+        text-decoration: underline;
+         margin-right: 1vw;
+         color: black;
+    }
+    
+}
